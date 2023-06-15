@@ -1,0 +1,24 @@
+{
+  "playas": [
+    {
+      "id": 1,
+      "nombre": "Playa blanca",
+      "departamento": "Magdalena"
+    },
+    {
+      "id": 2,
+      "nombre": "Buritaca",
+      "departamento": "Magdalena"
+    },
+    {
+      "nombre": "El rodadero",
+      "departamento": "Magdelena",
+      "id": 4
+    },
+    {
+      "nombre": "Paya cancum",
+      "departamento": "México",
+      "id": 5
+    }
+  ]
+}

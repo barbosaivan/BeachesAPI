@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestor de playas"> 
+    <title>Gestor de playas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <h1>Gestor de playas</h1>
+    <section class="crud">
+        <article>
+            <h2 class="crud_title">Agregar una nueva playa</h2>
+            <form class="crud_form">
+                <input class="input_label" type="text" name="nombre" placeholder="Nombre de la playa" required>
+                <input class="input_label" type="text" name="departamento" placeholder="Nombre del departamento" required>
+                <input class="input_submit" type="submit" value="GUARDAR">
+                <input type="hidden" name="id">
+            </form>
+        </article>
+
+        <article class="data_request">
+            <table class="crud_table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Departamento</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody> </tbody>
+            </table>
+        </article>
+    </section>
+
+    <template id="crud_template">
+        <tr>
+            <td class="name"></td>
+            <td class="department"></td>
+            <td>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar</button>
+            </td>
+        </tr>
+    </template>
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
